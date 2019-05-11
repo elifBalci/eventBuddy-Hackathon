@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "962357264126",
+    "firebase_url": "https://eventbuddy-d795f.firebaseio.com",
+    "project_id": "eventbuddy-d795f",
+    "storage_bucket": "eventbuddy-d795f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:962357264126:android:bff21184fce57cfe",
+        "android_client_info": {
+          "package_name": "com.example.eventbuddy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "962357264126-eofdlvkmoele4pufquchmgq33k8lu3n7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVtLFQPwuPkq4CdGy1t08mVYaHMJ8EOpE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "962357264126-eofdlvkmoele4pufquchmgq33k8lu3n7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
