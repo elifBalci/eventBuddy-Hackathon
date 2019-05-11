@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         private ImageButton sendButton;
         private ListView chatListView;
         private Button settingButton;
+        private EventAdapter eventAdapter;
 
 
         private DatabaseReference databaseReference;
@@ -53,10 +54,15 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        EventAdapter eventAdapter= new EventAdapter(this, databaseReference, displayName);
+        eventAdapter= new EventAdapter(this, databaseReference, displayName);
         chatListView.setAdapter(eventAdapter);
         chatListView.setTranscriptMode(ListView.TRANSCRIPT_MODE_ALWAYS_SCROLL);
         chatListView.setStackFromBottom(true);
+    }
+    @Override
+    protected void onStop() {
+        super.onStop();
+        eventAdapter.cleanup();
     }
 
 

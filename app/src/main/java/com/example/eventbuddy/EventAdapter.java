@@ -27,6 +27,8 @@ public class EventAdapter extends BaseAdapter {
         public void onChildAdded(DataSnapshot dataSnapshot, String s) {
 
             snapshotArrayList.add(dataSnapshot);
+            notifyDataSetChanged();
+
         }
 
         @Override
