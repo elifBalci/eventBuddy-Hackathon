@@ -31,13 +31,12 @@
         <ImageButton
             android:id="@+id/addEventButton"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="62dp"
             android:layout_alignEnd="@+id/listFooter"
-            android:onClick="addEventHandler"
             android:background="@drawable/circle_shape"
             android:contentDescription="@string/action_send"
+            android:onClick="addEventHandler"
             android:padding="10dp"
-            android:src="@android:drawable/ic_menu_send"
             tools:src="@android:drawable/ic_input_add" />
 
 

@@ -1,6 +1,8 @@
 package com.example.eventbuddy;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -56,8 +58,10 @@ public class AddEventActivity extends AppCompatActivity {
        String date = dateText.getText().toString();
        String description = descriptionText.getText().toString();
        String spinnerChoice = spinner.getSelectedItem().toString();
+        SharedPreferences sharedPref = getSharedPreferences(getString(R.string.preference_file_key), Context.MODE_PRIVATE);
+       String eventCreatorName = sharedPref.getString("username", null);
 
-       Event event = new Event(location, date, spinnerChoice, description);
+       Event event = new Event(location, date, spinnerChoice, description, eventCreatorName);
        databaseReference.child("events").push().setValue(event);
        Intent intent = new Intent(AddEventActivity.this, MainActivity.class);
        finish();

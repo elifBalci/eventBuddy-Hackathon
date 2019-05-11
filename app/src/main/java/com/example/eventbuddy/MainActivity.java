@@ -50,6 +50,15 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        EventAdapter eventAdapter= new EventAdapter(this, databaseReference, displayName);
+        chatListView.setAdapter(eventAdapter);
+        chatListView.setTranscriptMode(ListView.TRANSCRIPT_MODE_ALWAYS_SCROLL);
+        chatListView.setStackFromBottom(true);
+    }
+
 
 
 }
