@@ -5,15 +5,17 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:id="@+id/singleMessageContainer"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="10dp">
 
     <TextView
         android:id="@+id/authorName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
         android:textColor="#4B4545"
-        android:textSize="30sp" />
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/description"
@@ -21,32 +23,30 @@
         android:layout_height="wrap_content"
         android:layout_gravity="start"
         android:gravity="center_vertical"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
         android:text="@string/prompt_msg"
-        android:textSize="27sp"
-        android:textStyle="bold" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/date"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="TextView"
-        android:textSize="30sp" />
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/listAct"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="TextView"
-        android:textSize="30sp" />
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/location"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="TextView"
-        android:textSize="30sp" />
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/description"
