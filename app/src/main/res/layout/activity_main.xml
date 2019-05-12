@@ -2,6 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:background="@drawable/screen12"
     tools:context=".MainActivity">
 
     <ListView
@@ -9,18 +10,21 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/listFooter"
-        android:layout_marginBottom="-9dp"
+        android:layout_marginBottom="-7dp"
         android:divider="@null"
         android:dividerHeight="0dp"
         android:transcriptMode="alwaysScroll" />
 
     <LinearLayout
         android:id="@+id/listFooter"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:orientation="horizontal"
-        android:gravity="bottom">
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="bottom"
+        android:orientation="horizontal">
 
 
         <Space
@@ -30,8 +34,9 @@
 
         <ImageButton
             android:id="@+id/addEventButton"
-            android:layout_width="wrap_content"
+            android:layout_width="65dp"
             android:layout_height="62dp"
+            android:layout_alignTop="@+id/listFooter"
             android:layout_alignEnd="@+id/listFooter"
             android:background="@drawable/circle_shape"
             android:contentDescription="@string/action_send"
@@ -45,4 +50,3 @@
 
 
 </RelativeLayout>
-
