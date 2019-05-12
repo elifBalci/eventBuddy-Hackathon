@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import com.google.firebase.database.DatabaseReference;
@@ -18,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         private String displayName;
         private ImageButton sendButton;
         private ListView chatListView;
-        private Button settingButton;
+        private ImageView addButton;
         private EventAdapter eventAdapter;
 
 
@@ -33,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
             databaseReference = FirebaseDatabase.getInstance().getReference();
 
-            sendButton = findViewById(R.id.addEventButton);
+            addButton = findViewById(R.id.eventAddButton2);
             chatListView = findViewById(R.id.chat_list_view);
 
         }

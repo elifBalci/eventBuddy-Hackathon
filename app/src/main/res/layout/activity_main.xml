@@ -1,47 +1,52 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:background="@drawable/screen12"
     tools:context=".MainActivity">
+
 
     <ListView
         android:id="@+id/chat_list_view"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/listFooter"
-        android:layout_marginBottom="-9dp"
+        android:layout_above="@+id/footer"
+        android:layout_marginStart="-1dp"
+        android:layout_marginBottom="-7dp"
         android:divider="@null"
         android:dividerHeight="0dp"
-        android:transcriptMode="alwaysScroll" />
+        android:transcriptMode="alwaysScroll">
+
+    </ListView>
 
     <LinearLayout
-        android:id="@+id/listFooter"
-        android:layout_width="fill_parent"
+        android:id="@+id/footer"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:gravity="bottom"
         android:layout_alignParentBottom="true"
-        android:orientation="horizontal"
-        android:gravity="bottom">
-
+        android:orientation="horizontal">
 
         <Space
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
 
-        <ImageButton
-            android:id="@+id/addEventButton"
-            android:layout_width="wrap_content"
-            android:layout_height="62dp"
-            android:layout_alignEnd="@+id/listFooter"
-            android:background="@drawable/circle_shape"
-            android:contentDescription="@string/action_send"
-            android:onClick="addEventHandler"
-            android:padding="10dp"
-            tools:src="@android:drawable/ic_input_add" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="328dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView" />
 
+        <ImageView
+            android:id="@+id/eventAddButton2"
+            android:layout_width="64dp"
+            android:layout_height="55dp"
+            app:srcCompat="@android:drawable/ic_input_add" />
 
     </LinearLayout>
-
 
 
 </RelativeLayout>
