@@ -38,12 +38,13 @@
             android:layout_width="328dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="TextView" />
+            android:text="" />
 
         <ImageView
             android:id="@+id/eventAddButton2"
             android:layout_width="64dp"
             android:layout_height="55dp"
+            android:onClick="addEventHandler"
             app:srcCompat="@android:drawable/ic_input_add" />
 
     </LinearLayout>
